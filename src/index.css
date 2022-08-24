@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,68 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App{
+  max-width: 1550px;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  box-sizing: 0 2px 6px #08a05ca4;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/*----Header----*/
+header{
+  width: 97%;
+  min-height: 100px;
+  max-width: 1530px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  background-color: #202020;
+  box-shadow: 0 5px 20px red;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover{
+  color: red;
+}
+li{
+  list-style: none;
+}
+header ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+header ul li {
+  padding: 0 1rem;
+}
+header ul li a{
+  font-weight: bold;
+}
+header .cart{
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+}
+header .cart box-icon{
+  width:45px;
+  height:45px;
+  color: #fff;
+}
+header.cart span{
+  position: absolute;
+  top: -1rem;
+  right: -1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
