@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../images/Logo.png";
 
 export const Header = () => {
+
   return (
     <div>
       <header>
@@ -20,7 +21,7 @@ export const Header = () => {
         </ul>
         <div className="cart">
             <box-icon name="cart"></box-icon>
-            <spam className="item__total">0</spam>
+            <span className="item__total">0</span>
         </div>
       </header>
     </div>

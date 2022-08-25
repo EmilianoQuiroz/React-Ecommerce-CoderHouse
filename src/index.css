@@ -59,20 +59,37 @@ header ul li {
 header ul li a{
   font-weight: bold;
 }
+
 header .cart{
   position: relative;
   cursor: pointer;
-  color: #fff;
 }
 header .cart box-icon{
-  width:45px;
+  width: 45px;
   height:45px;
-  color: #fff;
 }
-header.cart span{
+header .cart span{
   position: absolute;
   top: -1rem;
-  right: -1.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
+  right: -.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color : #fff;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: red;
+
 }
+
+/*---- Media Querys ----*/
+/* @media only screen and (min-width: 600px){
+  header ul{
+    display: none;
+  }
+} */
