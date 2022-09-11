@@ -1,22 +1,17 @@
 import React from "react";
 import { Header } from "./componentes/Header";
-import { ProductoLista } from "./componentes/Productos";
-import 'boxicons';
-// import {BrowserRouter as Router} from 'react-router-dom';
-// import {DataProvider} from './context/Dataprovider';
-import {Carrito} from './componentes/Carrito';
+import "boxicons";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Paginas from "./componentes/Paginas";
 
 function App() {
   return (
-    
     <div className="App">
-      
-      <Header/>
-      <Carrito/>
-      <ProductoLista/>
-      
+      <Route>
+        <Header />
+        <Paginas />
+      </Route>
     </div>
-    
   );
 }
 
